@@ -295,6 +295,28 @@
           </ul>
           <a class="button" href="#top">Let's talk</a>
         </div>
+
+        <!-- PLACEHOLDER: replace YOUR_FORM_ID with the Formspree form ID once the client signs off -->
+        <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="contact-form__field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="contact-form__field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="contact-form__field">
+            <label for="cf-phone">Phone <span>(optional)</span></label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="contact-form__field">
+            <label for="cf-message">How can I help?</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <input type="text" name="_gotcha" class="contact-form__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="button" type="submit">Send message</button>
+        </form>
       </div>
     </section>
 
