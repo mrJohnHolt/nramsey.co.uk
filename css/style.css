@@ -26,6 +26,7 @@
 
   --shadow-soft: 0 1px 2px rgb(61 29 92 / 0.06), 0 12px 32px rgb(61 29 92 / 0.1);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-reveal: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 /* ==========================================================================
@@ -770,8 +771,8 @@ a {
    ========================================================================== */
 .js .reveal {
   opacity: 0;
-  transform: translateY(1.5rem);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+  transform: translateY(2rem);
+  transition: opacity 1.4s var(--ease-reveal), transform 1.6s var(--ease-reveal);
 }
 
 .js .reveal.is-visible {
@@ -779,15 +780,42 @@ a {
   transform: none;
 }
 
+.js .tiles__image img,
+.js .portrait img {
+  transform: scale(1.04);
+  transition: transform 2.2s var(--ease-reveal);
+}
+
+.js .tiles__image.is-visible img,
+.js .portrait.is-visible img {
+  transform: none;
+}
+
+.js .hero__image {
+  animation: hero-fade 2s var(--ease-reveal) both;
+}
+
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .js .reveal {
+  .js .reveal,
+  .js .tiles__image img,
+  .js .portrait img {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .js .hero__image {
+    animation: none;
   }
 
   .button {

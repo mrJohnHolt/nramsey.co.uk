@@ -26,10 +26,10 @@ const revealObserver = new IntersectionObserver((entries) => {
     entry.target.classList.add('is-visible');
     revealObserver.unobserve(entry.target);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
 
 document.querySelectorAll('.reveal').forEach((element) => {
   const siblings = [...element.parentElement.children].filter((child) => child.classList.contains('reveal'));
-  element.style.transitionDelay = `${siblings.indexOf(element) * 100}ms`;
+  element.style.transitionDelay = `${siblings.indexOf(element) * 200}ms`;
   revealObserver.observe(element);
 });
