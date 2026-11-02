@@ -23,7 +23,10 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="logo" href="#top" aria-label="N Ramsey Limited, home">
-        <img src="images/logo-mark.png" alt="" width="240" height="164">
+        <picture>
+          <source srcset="images/logo-mark-96.webp" type="image/webp">
+          <img src="images/logo-mark-96.png" alt="" width="96" height="66">
+        </picture>
         <span class="logo__name">N Ramsey <small>Limited</small></span>
       </a>
 
@@ -61,7 +64,10 @@
           <a class="button" href="#contact">Let's talk</a>
         </div>
       </div>
-      <img class="hero__image" src="images/hero-decorative.jpg" alt="" width="1280" height="1920" loading="lazy">
+      <picture>
+        <source srcset="images/hero-decorative-640.webp 640w, images/hero-decorative-960.webp 960w, images/hero-decorative-1280.webp 1280w" sizes="57vw" type="image/webp">
+        <img class="hero__image" src="images/hero-decorative-960.jpg" srcset="images/hero-decorative-640.jpg 640w, images/hero-decorative-960.jpg 960w, images/hero-decorative-1280.jpg 1280w" sizes="57vw" alt="" width="1280" height="1920" loading="lazy">
+      </picture>
     </section>
 
     <section class="section section--tint">
@@ -72,7 +78,10 @@
 
         <div class="tiles">
           <figure class="tiles__image reveal">
-            <img src="images/tile-laptop.jpg" alt="Reviewing financial reports on a laptop" width="1200" height="800" loading="lazy">
+            <picture>
+              <source srcset="images/tile-laptop-400.webp 400w, images/tile-laptop-800.webp 800w" sizes="(min-width: 48rem) 50vw, 100vw" type="image/webp">
+              <img src="images/tile-laptop-400.jpg" srcset="images/tile-laptop-400.jpg 400w, images/tile-laptop-800.jpg 800w" sizes="(min-width: 48rem) 50vw, 100vw" alt="Reviewing financial reports on a laptop" width="1200" height="800" loading="lazy">
+            </picture>
           </figure>
 
           <div class="circle reveal">
@@ -81,9 +90,11 @@
             <p>Good finance is more than a report. I'll help you understand what the numbers mean, decide on practical strategies to improve them and track progress.</p>
           </div>
 
-          <!-- PLACEHOLDER: Nigel's profile photo, replace with authentic business or Yorkshire and Lancashire imagery -->
-          <figure class="tiles__image reveal">
-            <img src="images/nigel-ramsey.jpg" alt="Nigel Ramsey" width="268" height="268" loading="lazy">
+          <figure class="tiles__image tiles__image--portrait reveal">
+            <picture>
+              <source srcset="images/nr-headshot-400.webp 400w, images/nr-headshot-800.webp 800w" sizes="(min-width: 48rem) 50vw, 100vw" type="image/webp">
+              <img src="images/nr-headshot-400.jpg" srcset="images/nr-headshot-400.jpg 400w, images/nr-headshot-800.jpg 800w" sizes="(min-width: 48rem) 50vw, 100vw" alt="Nigel Ramsey working on a laptop" width="1086" height="1273" loading="lazy">
+            </picture>
           </figure>
 
           <div class="circle reveal">
@@ -119,17 +130,6 @@
             <p>Helping with funding, growth, sale, succession or other major decisions.</p>
           </article>
         </div>
-
-        <ul class="stats">
-          <li class="stat reveal">
-            <strong class="stat__figure">25+</strong>
-            <span>years of senior finance experience</span>
-          </li>
-          <li class="stat reveal">
-            <strong class="stat__figure">£1m+</strong>
-            <span>savings delivered through cross-functional improvement initiatives</span>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -194,7 +194,10 @@
     <section class="band" id="about">
       <div class="container band__inner">
         <figure class="portrait reveal">
-          <img src="images/nigel-ramsey.jpg" alt="Nigel Ramsey" width="268" height="268" loading="lazy">
+          <picture>
+            <source srcset="images/nr-headshot-crop-400.webp 400w, images/nr-headshot-crop-700.webp 700w" sizes="(min-width: 48rem) 352px, 90vw" type="image/webp">
+            <img src="images/nr-headshot-crop-400.jpg" srcset="images/nr-headshot-crop-400.jpg 400w, images/nr-headshot-crop-700.jpg 700w" sizes="(min-width: 48rem) 352px, 90vw" alt="Nigel Ramsey" width="700" height="700" loading="lazy">
+          </picture>
         </figure>
         <div class="band__text reveal">
           <h2 class="section__title">A Finance Director who gets involved</h2>
@@ -323,7 +326,10 @@
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
         <a class="footer-logo" href="#top" aria-label="N Ramsey Limited, back to top">
-          <img src="images/logo-mark.png" alt="" width="240" height="164">
+          <picture>
+            <source srcset="images/logo-mark-96.webp" type="image/webp">
+            <img src="images/logo-mark-96.png" alt="" width="96" height="66">
+          </picture>
         </a>
         <p>A practical finance partner.<br>Clear numbers. Better decisions.</p>
         <p>Serving SMEs across Yorkshire and Lancashire.</p>

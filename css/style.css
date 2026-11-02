@@ -52,6 +52,10 @@ body {
   line-height: 1.7;
 }
 
+picture {
+  display: contents;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -354,6 +358,10 @@ a {
   object-position: 30% center;
 }
 
+.tiles__image--portrait img {
+  object-position: 50% 20%;
+}
+
 .circle {
   display: flex;
   flex-direction: column;
@@ -402,29 +410,6 @@ a {
 .situation p {
   margin: 0;
   color: var(--grey);
-}
-
-.stats {
-  display: grid;
-  gap: var(--space-md);
-  margin-top: var(--space-lg);
-  padding-top: var(--space-lg);
-  border-top: 1px solid rgb(91 44 131 / 0.2);
-}
-
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: var(--grey);
-}
-
-.stat__figure {
-  font-family: var(--font-display);
-  font-size: 3.5rem;
-  line-height: 1;
-  color: var(--purple);
 }
 
 /* ==========================================================================
@@ -541,6 +526,7 @@ a {
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 20%;
 }
 
 .contact-list {
@@ -834,12 +820,7 @@ a {
   .tiles,
   .situations,
   .testimonials,
-  .stats,
   .columns {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
